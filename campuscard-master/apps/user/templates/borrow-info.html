@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="/static/css/borrow-info.css">
+		<link rel="stylesheet" type="text/css" href="/static/css/main.css">
+	</head>
+	<body>
+		{% include 'base.html' with title='借阅信息' %}
+        
+        <br /> <br />
+        
+        
+        <div class="personal">
+             <div class="personalout"> <a class="plist" href="#"> <span class="picon5"></span><span class="ptit">当前借阅：（<i class="pink">{{ books_num }}</i> 本）</span><span class="iconarrow"></span> </a> </div>
+             <div class="personalout"> <a class="plist" href="#"> <span class="picon5"></span><span class="ptit">超期：（<i class="pink">{{ books_over_time_num }}</i> 本）</span><span class="iconarrow"></span> </a> </div>
+             
+        </div>
+        
+         <div class="index-list-wrap">
+    
+    {% for book in books %}
+        <div class="index-pad"> <a class="index-list index-che" >
+          <div class="main-l"> <span class="per">{{ book.book_id }}</span> </div>
+          <div class="list-main">
+            <div class=" clear "> <span class="circle-blue circle-c57"> {{ book.borrow_time }}</span> <span>——</span> <span class="per">{{ book.ending_time }}</span></div>
+            <div class="main-r">  <span class="val-per">状态：</span> <span class="val-per">借阅中</span> <span class="val-per"></span></div>
+          </div>
+          </a>
+        </div>
+    {% endfor %}
+
+
+    
+  </div>
+		
+		<br /> <br /> 
+	</body>
+</html>

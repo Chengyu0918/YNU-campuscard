@@ -1,0 +1,11 @@
+
+epython:S1192+"MDefine a constant instead of duplicating this literal 'consump.html' 5 times.(ú­×ò
+lpython:S1192X"TDefine a constant instead of duplicating this literal 'entrance-guard.html' 3 times.(İ€ŒÌ
+~python:S101"gRename class "borrowingView" to match the regular expression ^_?([A-Z_][a-zA-Z0-9]*|[a-z_][a-z0-9_]*)$.(¬ŒşÛ
+spython:S117"\Rename this local variable "studentList" to match the regular expression ^[_a-z][a-z0-9_]*$.(Å‚ù¼
+python:S101)"eRename class "consumpView" to match the regular expression ^_?([A-Z_][a-zA-Z0-9]*|[a-z_][a-z0-9_]*)$.(Êä˜µúÿÿÿÿ
+spython:S1171"\Rename this local variable "studentList" to match the regular expression ^[_a-z][a-z0-9_]*$.(Å‚ù¼
+Cpython:S14818"+Remove the unused local variable "student".(úí£Õ
+;python:S125?"Remove this commented out code.(ñÀÀûÿÿÿÿ
+ˆpython:S101V"lRename class "entrance_guardView" to match the regular expression ^_?([A-Z_][a-zA-Z0-9]*|[a-z_][a-z0-9_]*)$.(Â¹²Ÿÿÿÿÿÿ
+spython:S117\"\Rename this local variable "studentList" to match the regular expression ^[_a-z][a-z0-9_]*$.(Å‚ù¼

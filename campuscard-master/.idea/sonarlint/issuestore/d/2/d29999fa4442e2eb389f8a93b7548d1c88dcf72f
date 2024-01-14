@@ -1,0 +1,7 @@
+
+lpython:S3776'"TRefactor this function to reduce its Cognitive Complexity from 35 to the 15 allowed.(”–ή™
+Bpython:S6660t"%Use the `isinstance()` function here.(Επγόÿÿÿÿ
+Dpython:S5806—"+Rename this variable; it shadows a builtin.(²ό§Κ
+>python:S6660¬"%Use the `isinstance()` function here.(µ ΧΖ
+rpython:S3776–"TRefactor this function to reduce its Cognitive Complexity from 18 to the 15 allowed.(ώήθϊϊÿÿÿÿ
+/python:S6659Ο"Use `startswith` here.(¦ΛΏ»

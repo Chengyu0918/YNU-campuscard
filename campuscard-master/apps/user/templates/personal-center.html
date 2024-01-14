@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="/static/css/personanl-center.css">
+		<link rel="stylesheet" type="text/css" href="/static/css/form.css">
+		<link rel="stylesheet" type="text/css" href="/static/css/main.css">
+	</head>
+	<body >
+{#		<header class="ui-header ui-header-positive ui-border-b">#}
+{#            <i class="ui-icon-return" onclick="history.back()"></i><h1>个人中心 </h1>#}
+{#            <a href="/index/"><button class="ui-btn">回首页</button> </a>#}
+{#        </header>#}
+{#        #}
+{#         <footer class="ui-footer ui-footer-btn">#}
+{#             <ul class="ui-tiled ui-border-t">#}
+{#                 <li class="ui-border-r"><a href="/index/" style="color: #0caffa">个人中心 </a></li>#}
+{#                <li class="ui-border-r"><a href="/ticket/" style="color: #0caffa">我的卡券 </a></li>#}
+{#                <li class="ui-border-r"><a href="/setting/" style="color: #0caffa">设置 </a></li>#}
+{#            </ul>#}
+{#        </footer>#}
+        {% include 'base.html' with title='个人中心' %}
+        <br /> <br /> 
+		
+	   <section id="section">
+	   	<article>
+		<div id="feature">
+				<ul class="feature1">
+					<a href="/consume_record/">
+						<li class="pic"><img src="/static/images/d_03.jpg" alt=""></li>
+						<li class="wd">查询</li>
+					</a>
+				</ul>
+				<ul class="feature1">
+					<a href="/paycode/">
+						<li class="pic"><img src="/static/images/d_03-02.jpg" alt=""></li>
+						<li class="wd">身份码</li>
+					</a>
+				</ul>
+				<ul class="feature1">
+					<a href="/recharge/">
+						<li class="pic"><img src="/static/images/d_03-03.jpg" alt=""></li>
+						<li class="wd">充值</li>
+					</a>
+				</ul>
+				<ul class="feature1">
+					<a href="/borrow_info/">
+						<li class="pic"><img src="/static/images/d_03-04.jpg" alt=""></li>
+						<li class="wd">借阅信息</li>
+					</a>
+				</ul>
+		</div>
+		</article>
+		</section>
+		
+<div> 
+  <!--切换-->
+  <section class="swiper-container" >
+    <section class="swiper-wrapper">
+      <section class="swiper-slide">
+        <section class="agent_level">
+          <section class="levelbox level01">
+            <p class="mb10 clearfix"><span class="fl"><img alt="" src="/static/images/sjl.png"></span><span class="white f15 name">姓名：{{ name }}</span></p>
+            <p class="f15 white">学号：{{ account }}</p>
+          
+            <p class="f12 white p_left">学院：{{ college }}</p>
+
+            <p class="levelIcon"><img alt="" src="/static/images/logo2.png"></p>
+            <br />
+            <hr>
+            
+            
+          </section>
+        </section>
+      </section>
+    </section>
+  </section>
+  <!--等级内容-->
+  
+</div>
+
+ <div class="account-box" id="div1"  style="display:block;">
+    <h1 class="account-title">
+        <span class="left c3">今日消费：{{ consume_today_sum }} 元</span>
+    </h1>
+    <div class="f-rili-table">
+        <div class="f-rili-head celarfix">
+            <div class="f-rili-th">余额：</div>
+            <div class="f-rili-th">{{ balance }} 元</div>
+            <div class="f-rili-th" ><a href="/consume_record/" >明细 </a></div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
+ <div class="account-box" id="div1"  style="display:block;">
+    <h1 class="account-title">
+        <span class="left c3">超期图书：{{ books_over_time_num }} 本</span>
+    </h1>
+    <div class="f-rili-table">
+        <div class="f-rili-head celarfix">
+            <div class="f-rili-th">在借：</div>
+            <div class="f-rili-th">{{ books_num }} 本</div>
+            <div class="f-rili-th" ><a href="/borrow_info/" >详情 </a></div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+ 
+ 
+<br /> <br />
+	</body>
+	
+	
+</html>
